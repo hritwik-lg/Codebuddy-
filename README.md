@@ -59,7 +59,7 @@ Follow these steps to get the development environment running locally.
 
 1.  **Clone the project:**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/task1.git](https://github.com/YOUR_USERNAME/task1.git)
+    git clone https://github.com/hritwik-lg/Codebuddy-.git
     cd task1
     ```
 
