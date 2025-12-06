@@ -90,18 +90,23 @@ Follow these steps to get the development environment running locally.
     ```
     > **Note:** The default setup assumes you are using `mysql` with default local host settings.
 
-5.  **Run Migrations and Seed Database:**
+5.  **Generate Application Key:**
+    ```bash
+    php artisan key:generate
+    ```
+    
+6.  **Run Migrations and Seed Database:**
     *(This command will drop all tables, re-run migrations, and populate the database with test data.)*
     ```bash
     php artisan migrate:fresh --seed
     ```
 
-6.  **Start the Development Server:**
+7.  **Start the Development Server:**
     ```bash
     php artisan serve
     ```
 
-7.  **Visit the Application:**
+8.  **Visit the Application:**
     Open your web browser and navigate to:
     `http://localhost:8000`
 
