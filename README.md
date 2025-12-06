@@ -68,18 +68,40 @@ Follow these steps to get the development environment running locally.
     composer install
     ```
 
-3.  **Run Migrations and Seed Database:**
+3. **Copy Example Environment File:**
+    ```bash
+    cp .env.example .env
+    ```
+    (On Windows PowerShell)
+   ```bash
+    copy .env.example .env
+   ```
+
+4. **Update Database Credentials in `.env`:**
+    Open the newly created `.env` file and set your database connection details.
+
+    ```dotenv
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=task1_db  # Use the database name you created
+    DB_USERNAME=root      # Use your actual MySQL username
+    DB_PASSWORD=          # Use your actual MySQL password (default for XAMPP is empty)
+    ```
+    > **Note:** The default setup assumes you are using `mysql` with default local host settings.
+
+5.  **Run Migrations and Seed Database:**
     *(This command will drop all tables, re-run migrations, and populate the database with test data.)*
     ```bash
     php artisan migrate:fresh --seed
     ```
 
-4.  **Start the Development Server:**
+6.  **Start the Development Server:**
     ```bash
     php artisan serve
     ```
 
-5.  **Visit the Application:**
+7.  **Visit the Application:**
     Open your web browser and navigate to:
     `http://localhost:8000`
 
