@@ -68,23 +68,18 @@ Follow these steps to get the development environment running locally.
     composer install
     ```
 
-3.  **Generate Application Key:**
-    ```bash
-    php artisan key:generate
-    ```
-
-4.  **Run Migrations and Seed Database:**
+3.  **Run Migrations and Seed Database:**
     *(This command will drop all tables, re-run migrations, and populate the database with test data.)*
     ```bash
     php artisan migrate:fresh --seed
     ```
 
-5.  **Start the Development Server:**
+4.  **Start the Development Server:**
     ```bash
     php artisan serve
     ```
 
-6.  **Visit the Application:**
+5.  **Visit the Application:**
     Open your web browser and navigate to:
     `http://localhost:8000`
 
