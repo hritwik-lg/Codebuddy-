@@ -103,7 +103,7 @@ The seeding process automatically creates two default accounts for testing.
 | :--- | :--- |
 | **Email** | `karan@task1.com` |
 | **Password** | `password` |
-| **Dashboard URL** | `/dashboard` |
+| **Dashboard URL** | `user/dashboard` |
 
 ---
 
